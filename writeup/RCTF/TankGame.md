@@ -1,6 +1,6 @@
 TankGame (REV 200)
 =================
-By : wizard of skn (**PalmPTSJ**)
+By : **PalmPTSJ** (member of **wizard of skn**)
 
 ### TH
 
