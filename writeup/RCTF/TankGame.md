@@ -73,7 +73,7 @@ for level in range(1,21) :
 
 ### EN
 
-A reverse engineering challenge (200 points) with many solves. Even that We're not good at RE but We think we should give it a try.
+A reverse engineering challenge (200 points) with many solves. Even that we're not good at RE but we think we should give it a try.
 
 After extracting the file we got the TankGame.exe file and 3 folders which should be the game's data.
 
@@ -91,7 +91,7 @@ Now We think that we should change the map to be easier and just beat all of the
 
 ![Hex Map](Tank4.png)
 
-After some trial and error, I came to a conclusion that
+After some trial and error, We came to a conclusion that
 
 |hex   | block      |
 |------|-----------|
@@ -104,7 +104,7 @@ The XX byte tells the orientation of the block (full / half-bottom / half-top / 
 
 Now it's time to generate our map with a simple script. But what map is considered **easy** ??
 
-After some more trial and error, We found out that the enemy can only spawn in the specific 5 blocks and if they spawn on water, they can't move and will only shoot downwards. So this is the map generating script I used : 
+After some more trial and error, We found out that the enemy can only spawn in the specific 5 blocks and if they spawn on water, they can't move and will only shoot downwards. So this is the script I used : 
 
 ```python
 map = [
