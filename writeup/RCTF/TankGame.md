@@ -87,11 +87,11 @@ Let's inspect the game's data, the *map* folder contains files name **level1.map
 
 ![Folder Map](Tank3.png)
 
-Now We think that we should change the map to be easier and just beat all of them. After inspecting the .map file with hex editor, We found that the map size are not equal to each other. Maybe some blocks need more than 1 byte?
+Now we think that we should change the map to be easier and just beat all of them. After inspecting the .map file with hex editor, we found that the map size are not equal to each other. Maybe some blocks need more than 1 byte?
 
 ![Hex Map](Tank4.png)
 
-After some trial and error, We came to a conclusion that
+After some trial and error, we came to a conclusion that
 
 |hex   | block      |
 |------|-----------|
@@ -104,7 +104,7 @@ The XX byte tells the orientation of the block (full / half-bottom / half-top / 
 
 Now it's time to generate our map with a simple script. But what map is considered **easy** ??
 
-After some more trial and error, We found out that the enemy can only spawn in the specific 5 blocks and if they spawn on water, they can't move and will only shoot downwards. So this is the script I used : 
+After some more trial and error, we found out that the enemy can only spawn in the specific 5 blocks and if they spawn on water, they can't move and will only shoot downwards. So this is the script we used : 
 
 ```python
 map = [
